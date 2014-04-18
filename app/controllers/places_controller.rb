@@ -12,6 +12,8 @@ class PlacesController < ApplicationController
 
   def create
     @place = Place.new(place_params)
+    @place.user_id = current_user.id
+    @place.save
     if @place.save
        redirect_to places_path
     else
@@ -24,7 +26,7 @@ class PlacesController < ApplicationController
   end
 
   def destroy
-    @place = Place.new(place_params)
+    @place = Place.find(params[:id])
     if @place.destroy
       flash[:notice] = "Place destoyed!"
       redirect_to places_path

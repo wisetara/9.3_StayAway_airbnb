@@ -1,7 +1,8 @@
 class Place < ActiveRecord::Base
   validates :title, presence: true
   validates :description, presence: true
-  belongs_to :user
+  has_many :reviews
+  has_many :users, :through => :reviews
   has_attached_file :housepic,
                     :styles => { :medium => "300x300>", :thumb => "100x100>" }
   # validates_attachment_content_type :housepic,
