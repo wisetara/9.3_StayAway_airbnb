@@ -8,7 +8,6 @@ describe "the signin process", type: :feature do
     fill_in 'Email', with: user.email
     fill_in 'Password', with: user.password
     click_button 'Sign in'
-     save_and_open_page
     page.should have_content('alicffe@wonderland.com')
   end
 end

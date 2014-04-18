@@ -1,5 +1,5 @@
 class PlacesController < ApplicationController
-   before_filter :authorize, only: [:index]
+   skip_before_action :authorize, only: [:index, :show]
 
   def index
     @places = Place.all
@@ -36,7 +36,8 @@ private
   def place_params
     params.require(:place).permit(:title,
                                   :description,
-                                  :user_id)
+                                  :user_id,
+                                  :housepic)
   end
 end
 

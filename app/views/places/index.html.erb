@@ -1,5 +1,12 @@
-<h1>Here are all the places!</h1>
 
-<% @places.each do |place| %>
-  <%= place.title %>
-<% end %>
+<div class="row">
+  <%= image_tag("trailer.jpg", height: '100%', width: '100%', class: "front_page_image") %>
+</div>
+<br>
+<br>
+<div class="row">
+  <% @places.each do |place| %>
+    <%= image_tag place.housepic(:medium) %>
+    <%= place.title %>
+  <% end %>
+</row>

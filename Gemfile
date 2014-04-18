@@ -12,6 +12,7 @@ gem 'jquery-turbolinks'
 gem 'foundation-rails'
 gem 'bcrypt'
 gem 'devise'
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
 
 group :development do
