@@ -1,28 +1,11 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a project that demonstrates devise for user management. This is currently in progress.
 
-Things you may want to cover:
+Created by Kathryn Hough and Tara Scherner de la Fuente.
 
-* Ruby version
+Airbnb clone
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Let's make an Airbnb clone. I'll leave it to you to write user stories for this one. Remember the format: "As a [role], I want [feature], so that [benefit]." I'd suggest you write out several things you'd like to do to begin with, then prioritize them so that you get to the ones you're most excited about. Get in the habit of working on one story and making sure that you complete it before moving to the next one. You'll find that you're much more productive and have less breaking code than if you try to skip around between stories.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
